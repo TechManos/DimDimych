@@ -1,0 +1,21 @@
+<div *ngIf="topic" class="content-area-container">
+  <div class="topic-header">
+    <p class="content-number">#{{ topic!.id }}</p>
+    <p class="content-genre">{{ topic!.genre }}</p>
+    <h2 class="content-name">{{ topic!.name }}</h2>
+    <p class="content-short-desc content-generic-short-desc">{{ topic!.shortDescription }}</p>
+  </div>
+
+  <div class="topic-content">
+    <!-- TODO: add to grid above, normalize -->
+    <p class="content-date">📅 11.10.2023 18:54</p>
+
+    <div *ngFor="let el of topic.contentElements">
+      <div *ngIf="isElementTextContent(el)">
+        <div [innerHTML]="getTextElementHtml(el)"></div>
+      </div>
+
+      <img *ngIf="isElementImageContent(el)" src="{{ getImageElementSrc(el) }}" alt="{{ getImageElementAlt(el) }}"/>
+    </div>
+  </div>
+</div>

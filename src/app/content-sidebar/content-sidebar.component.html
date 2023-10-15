@@ -1,0 +1,12 @@
+<div class="sidebar-container">
+  <div *ngFor="let topic of topics" class="sidebar-topic">
+    <a [routerLink]="['/topics', topic.id]" class="sidebar-topic-link">
+      <h3 class="sidebar-topic-name">
+        {{ topic.name }}
+      </h3>
+      <p class="sidebar-topic-description">
+        {{ topic.shortDescription }}
+      </p>
+    </a>
+  </div>
+</div>

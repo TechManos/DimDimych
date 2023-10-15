@@ -1,0 +1,71 @@
+<header class="header-container">
+  <div class="thunder-container">
+  <video onloadedmetadata="this.muted=true" autoplay muted loop id="thunder">
+    <source src="assets/inspiration/Thunder_big_01.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  </div>
+
+<!--        style="background-color: #363636;">-->
+  <div class="header-pukan">
+    <span class="colored-circle"
+      style="
+        display: inline-block;
+        /*background: lightblue;*/
+        /*background-color: #363636;*/
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+      "
+      [class.colored-circle-chill]="dimychPukanState.temperature <= 42"
+      [class.colored-circle-moderate]="dimychPukanState.temperature >= 43 && dimychPukanState.temperature <= 67"
+      [class.colored-circle-hot]="dimychPukanState.temperature >= 68 && dimychPukanState.temperature <= 99"
+      [class.colored-circle-burning]="dimychPukanState.temperature >= 100">
+    <!--      [style.background]="dimychPukanState.color"-->
+    </span>
+    <p class="temperature-description">
+<!--          style="background-color: #1976d2">-->
+      Температура пукана Дім Дімича на даний момент:
+      <span class="temperature-value"
+            [class.temperature-value-chill]="dimychPukanState.temperature <= 42"
+            [class.temperature-value-moderate]="dimychPukanState.temperature >= 43 && dimychPukanState.temperature <= 67"
+            [class.temperature-value-hot]="dimychPukanState.temperature >= 68 && dimychPukanState.temperature <= 99"
+            [class.temperature-value-burning]="dimychPukanState.temperature >= 100">
+        {{ dimychPukanState.temperature }}</span>°
+    </p>
+  </div>
+
+  <div class="header-main-page">
+    <a [routerLink]="['/']" class="header-main-page-link">
+    <img
+      ngSrc="assets/inspiration/MainLinkIcon_andColorInspirationForHeaderAndPage.jpg"
+      fill=""
+      alt="Dim Dimych Channel"
+      class="header-img"
+      priority="">
+    </a>
+  </div>
+
+  <nav class="header-external-links">
+<!--       style="background-color: bisque">-->
+      <!-- <strong>This is the navigation</strong> -->
+      <a href="https://www.google.com/" title="Нагугли собі блять, я популярный сука!">
+        <img
+          ngSrc="assets/inspiration/discord_icon_01.png"
+          alt="Discord"
+          height="50"
+          width="50"
+          class="discord-img"
+        />
+      </a>
+      <a href="https://www.bing.com/images/search?q=%D1%82%D0%B0+%D0%BF%D1%96%D1%88%D0%BE%D0%B2+%D1%82%D0%B8+%D0%BD%D0%B0%D1%85%D1%83%D0%B9+%D0%BD%D0%B0%D0%B1%D0%B8%D1%82%D0%B8%D0%B9+%D1%81%D0%B8%D0%BD+%D1%88%D0%BB%D1%8E%D1%85%D0%B8&qs=n&form=QBIDMH&sp=-1&lq=0&pq=%D1%82%D0%B0+%D0%BF%D1%96%D1%88%D0%BE%D0%B2+%D1%82%D0%B8+%D0%BD%D0%B0%D1%85%D1%83%D0%B9+%D0%BD%D0%B0%D0%B1%D0%B8%D1%82%D0%B8%D0%B9+%D1%81%D0%B8%D0%BD+%D1%88%D0%BB%D1%8E%D1%85%D0%B8&sc=0-35&cvid=DB4FFCEA8EEC49E6BB1861E88AFBED4F&ghsh=0&ghacc=0&first=1" title="ладна">
+        <img
+          ngSrc="assets/inspiration/tiktok_icon.jpg"
+          alt="TikTak"
+          height="50"
+          width="50"
+          class="tiktok-img"
+        />
+      </a>
+  </nav>
+</header>

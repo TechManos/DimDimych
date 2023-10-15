@@ -1,1 +1,101 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: kyivtype-sans-thin;
+  src: url(assets/fonts/KyivTypeSans-Thin.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-black;
+  src: url(assets/fonts/KyivTypeSans-Black.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-black2;
+  src: url(assets/fonts/KyivTypeSans-Black2.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-black3;
+  src: url(assets/fonts/KyivTypeSans-Black3.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-bold;
+  src: url(assets/fonts/KyivTypeSans-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-bold2;
+  src: url(assets/fonts/KyivTypeSans-Bold2.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-bold3;
+  src: url(assets/fonts/KyivTypeSans-Bold3.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-heavy;
+  src: url(assets/fonts/KyivTypeSans-Heavy.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-heavy2;
+  src: url(assets/fonts/KyivTypeSans-Heavy2.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-heavy3;
+  src: url(assets/fonts/KyivTypeSans-Heavy3.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-light;
+  src: url(assets/fonts/KyivTypeSans-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-light2;
+  src: url(assets/fonts/KyivTypeSans-Light2.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-light3;
+  src: url(assets/fonts/KyivTypeSans-Light3.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-medium;
+  src: url(assets/fonts/KyivTypeSans-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-medium2;
+  src: url(assets/fonts/KyivTypeSans-Medium2.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-medium3;
+  src: url(assets/fonts/KyivTypeSans-Medium3.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-regular;
+  src: url(assets/fonts/KyivTypeSans-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-regular2;
+  src: url(assets/fonts/KyivTypeSans-Regular2.otf) format("opentype");
+}
+
+@font-face {
+  font-family: kyivtype-sans-regular3;
+  src: url(assets/fonts/KyivTypeSans-Regular3.otf) format("opentype");
+}

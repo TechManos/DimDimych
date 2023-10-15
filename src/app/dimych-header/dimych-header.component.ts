@@ -10,6 +10,8 @@ import { CronJob } from 'cron';
 })
 export class DimychHeaderComponent implements OnInit {
 
+  video = 'assets/inspiration/Thunder_big_01.mp4';
+
   dimychPukanState = {
     temperature: 36
   }
